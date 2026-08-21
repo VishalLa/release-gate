@@ -47,7 +47,7 @@ jobs:
                   "criticalVulnerabilities": 0, "digestPinned": True
               }
           }
-          r = requests.post("http://localhost:8000/release-gate", json=payload)
+          r = requests.post("https://release-gate-1x64.onrender.com/release-gate", json=payload)
           print(r.json())
           assert r.json()["decision"] == "promote"
           EOF

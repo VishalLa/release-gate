@@ -1,7 +1,7 @@
 import re
 from flask import Blueprint, request, jsonify
 
-app = Blueprint("q2")
+app = Blueprint("q2", __name__)
 
 
 MY_TENANT = "tenant-1ro51to"
